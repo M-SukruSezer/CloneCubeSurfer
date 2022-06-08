@@ -16,8 +16,8 @@ namespace CubeSurfer.RotateController
         {
             if (_gameManager._gameState != GameManager.GameState.Failed && _gameManager._gameState != GameManager.GameState.Finish)
             {
-                float _yatayEksen = Input.GetAxis("Horizontal") * _cubeRightLeftSpeed * Time.deltaTime;
-                this.transform.Translate(_yatayEksen, 0, _cubeForwardSpeed * Time.deltaTime);
+                float _horizontalAxis = Input.GetAxis("Horizontal") * _cubeRightLeftSpeed * Time.deltaTime;
+                this.transform.Translate(_horizontalAxis, 0, _cubeForwardSpeed * Time.deltaTime);
             }
         }
     }
